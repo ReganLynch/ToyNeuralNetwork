@@ -6,7 +6,7 @@ An object-oriented implementation of a neural network in Java
   - This project was a great learning experience for me, and plan to use this neural network api in the future for a game
      playing AI
 
-### How To Initialize 
+## How To Initialize 
 You can initialize a Neural Network with the following:
 ```java
   NeuralNetwork my_nn = new NeuralNetwork("2, 3, 1", ActivationTypes.RELU, ActivationTypes.SIGMOID);
@@ -17,7 +17,7 @@ The three arguments passed to create a neural network are as follows:
    2) the activation function for the hidden layers
    3) the activation function for the output layer
    
-### How To Train
+## How To Train
 You can train the neural network like so:
 ```java
   //initialize the network
@@ -30,7 +30,7 @@ You can train the neural network like so:
 ```
 You can also train the network via an extrnal method, such as a NEAT algorithm, using the implmented 'mutate' function.
 
-### How To Predict Output From Inputs
+## How To Predict Output From Inputs
 After training, the network will have learned the inputs (hopefully!). You can ask the network to predict the output(s) for a given input:
 ```java
   //prediciting outputs from the trained neural net above
@@ -41,7 +41,7 @@ After training, the network will have learned the inputs (hopefully!). You can a
 ```
 This shows that the neural network learned the XOR gate successfully.
 
-### Viewing The Structure of The Neural Network
+## Viewing The Structure of The Neural Network
 You can use the NeuralNework.display() method to paint the structure of the current neural network object, including all its connections, weights, and biases
 ```java
   //initialize the network
