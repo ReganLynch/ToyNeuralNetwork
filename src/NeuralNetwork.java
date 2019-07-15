@@ -360,6 +360,9 @@ public class NeuralNetwork {
 	 * @param epochs			the number of training iterations
 	 */
 	public void train(double[][] inputs, double[][] targets, double learning_rate, int epochs) {
+		if(inputs.length != targets.length) {
+			throw new IllegalArgumentException("THE NUMBER OF INPUT SETS MUST EQUAL THE NUMBER OF OUTPUT SETS");
+		}
 		float[][] float_inputs = new float[inputs.length][inputs[0].length];
 		float[][] float_targets = new float[targets.length][targets[0].length];
 		float float_lr = (float)learning_rate;
