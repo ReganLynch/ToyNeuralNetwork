@@ -5,6 +5,16 @@ import java.util.ArrayList;
 
 import javax.swing.JFrame;
 
+/**
+ * @author Regan Lynch
+ * 
+ * 			NeuralNetDrawer class
+ * 
+ * 				- a pretty hacky and ugly class to draw what a given neural network looks like.
+ * 				- displays all connections, nodes, weights and biases 
+ * 				- was created with the main purpose of debugging while developing
+ *
+ */
 @SuppressWarnings("serial")
 public class NeuralNetDrawer extends JFrame{
 
