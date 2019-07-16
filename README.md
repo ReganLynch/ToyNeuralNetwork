@@ -3,7 +3,7 @@ An object-oriented implementation of a neural network in Java
 
   - I am well aware that an object-oriented approach to implementing a neural network results in suboptimal performance to say
      the least, but I wanted to implement a neural network in this way to gain a better understanding of how exactly they work.
-  - This project was a great learning experience for me, and plan to use this neural network api in the future for a game
+  - This project was a great learning experience for me, and I plan to use this neural network api in the future for a game
      playing AI
 
 ## How To Initialize 
