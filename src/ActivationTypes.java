@@ -24,6 +24,7 @@ public enum ActivationTypes{
 	private Method activation_func;
 	private Method activation_func_prime;
 	private Method weight_initializer;
+	private String type;
 	
 	/**
 	 * @param activation_func			the name of the function that performs the activation
@@ -32,6 +33,7 @@ public enum ActivationTypes{
 	 */
 	private ActivationTypes(String activation_func, String activation_prime_func, String weight_initializer ){ 
 		try {
+			this.type = activation_func;
 			this.activation_func = ActivationFunctions.class.getMethod(activation_func, new Class[] {double.class});
 			this.activation_func_prime = ActivationFunctions.class.getMethod(activation_prime_func, new Class[] {double.class});
 			this.weight_initializer = ActivationFunctions.class.getMethod(weight_initializer);
@@ -86,6 +88,28 @@ public enum ActivationTypes{
 		} 
 		return new_val;
 	}
-
+	
+	
+	//----------------------------------------------------------------------------	
+	/**
+	 * @param inType  the string stating the type of the activation function
+	 * @return        the ActivationTypes object
+	 */
+	public static ActivationTypes getActivationType(String inType) {	
+		for(ActivationTypes currActivator : ActivationTypes.values()) {
+			if(currActivator.type.equals(inType)) {
+				return currActivator;
+			}
+		}		
+		return null;
+	}
+	
+	//----------------------------------------------------------------------------
+	/**
+	 * @return the type name of this activator
+	 */
+	public String getName() {
+		return this.type; 
+	}
 
 }

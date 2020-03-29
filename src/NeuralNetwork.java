@@ -454,6 +454,22 @@ public class NeuralNetwork {
 	
 	//----------------------------------------------------------------------------------------------------------------
 	/**
+	 * @return the hidden layer activation function type
+	 */
+	public ActivationTypes getHiddenActivationFunctionType() {
+		return this.hidden_activator;
+	}
+	
+	//----------------------------------------------------------------------------------------------------------------
+	/**
+	 * @return  the output layer activation function type
+	 */
+	public ActivationTypes getOutputActivationFunctionType() {
+		return this.output_activator;
+	}
+		
+	//----------------------------------------------------------------------------------------------------------------
+	/**
 	 * 	sets the input values of the network
 	 * 
 	 * @param inputs	the input values to the network
