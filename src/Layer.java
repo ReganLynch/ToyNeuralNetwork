@@ -2,6 +2,7 @@
 /**
  * @author Regan Lynch
  * 
+ *
  * 	Generic Layer Class
  * 		Extended by:
  * 			- InputLayer
